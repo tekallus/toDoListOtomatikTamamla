@@ -8,9 +8,19 @@ Bunu düşünün ve hala takıldıysanız, başka bir ipucu için 51. satıra il
 
 
 
+yanlis kullanim
+const [myValue, setMyValue] = useState('');
 
 
+<input type="text" value={myValue} onChange={(e) => setMyValue(e.target.value)} />
 
+dogru kullanim
+
+const [myValue, setMyValue] = useState('');
+
+// ...
+
+<input type="text" value={myValue} onChange={(e) => setMyValue(e.target.value)} />
 
 
 
