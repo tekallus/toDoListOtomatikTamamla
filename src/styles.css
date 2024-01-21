@@ -141,7 +141,7 @@ input {
   position: relative;
   cursor: pointer;
   font-size: 16px;
-  user-select: none;
+
   width: 100%;
 }
 
@@ -304,4 +304,9 @@ button:focus:not(:focus-visible) {
 }
 .add-item-icon.faded {
   opacity: 0.2;
+}
+@supports (-webkit-user-select: none) {
+  .new-item-input {
+    -webkit-user-select: none; /* Safari-specific property */
+  }
 }
