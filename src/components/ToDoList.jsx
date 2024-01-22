@@ -27,7 +27,8 @@ export default function ToDoList() {
     }
   }
 
-  const div = document.querySelector('.to-do-list-container')
+  const div = typeof document !== 'undefined' && document.querySelector('.to-do-list-container')
+
 
   useEffect(() => {
     if (div) {
